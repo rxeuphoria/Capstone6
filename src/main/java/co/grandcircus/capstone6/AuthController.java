@@ -76,6 +76,8 @@ public class AuthController {
 		return "redirect:/";
 	}
 
+	//TODO cookies controller? can't retrieve user info from session currently.  
+	
 	@RequestMapping("/addTask")
 	public String showAddTask(Model model) {
 		User user = (User) session.getAttribute("user");
@@ -83,4 +85,5 @@ public class AuthController {
 		return "addTask";
 	}
 
+	
 }
